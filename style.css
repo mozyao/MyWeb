@@ -1,0 +1,68 @@
+body{
+
+	background: #666; 
+	color: #fff; 
+	font-family:arial;
+}
+
+
+
+
+a{ /* Navigation 里面所有的a tags:  Home, about,...;*/
+	color: #fff;
+	text-decoration: none; /* remove underline */
+}
+
+ul{
+	padding:0;
+}
+
+#container{
+	background: #333;
+	wiidth: 960px;
+	margin: 30px auto;
+	overflow: hidden;
+	padding: 10px;
+}	
+
+#nav{
+	height: 40px;
+	background: #644;
+
+}
+
+
+#nav ul{
+	padding-top: 10px;
+	padding-left: 10px;
+
+
+}
+
+
+#nav li{
+	list-style: none; /*  除去小圆点  */
+	float: left; /* 变成horizontal 的list */
+	padding-right: 20px;
+
+}
+
+
+#nav .active{
+	font-weight: bold;
+
+
+}
+
+
+
+#main{
+	float: left;
+	width: 60%;
+}
+
+#footer{
+	text-align: center;
+	padding: 10px;
+	background: #456;
+}
