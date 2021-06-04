@@ -3,6 +3,8 @@ body{
 	background: #666; 
 	color: #fff; 
 	font-family:arial;
+	line-height: 1.5em;
+
 }
 
 
@@ -17,6 +19,11 @@ ul{
 	padding:0;
 }
 
+#container .clr{
+	clear:both;
+}
+
+
 #container{
 	background: #333;
 	wiidth: 960px;
@@ -26,9 +33,9 @@ ul{
 }	
 
 #nav{
-	height: 40px;
+	height: 55px;
 	background: #644;
-
+	margin-bottom: 20px;
 }
 
 
@@ -50,8 +57,6 @@ ul{
 
 #nav .active{
 	font-weight: bold;
-
-
 }
 
 
@@ -61,8 +66,44 @@ ul{
 	width: 60%;
 }
 
+#sidebar{
+	float: right;
+	width: 30%;
+	background: #666;
+	margin-top: 20px;
+	padding: 10px;
+
+
+}
+
+
+
 #footer{
 	text-align: center;
 	padding: 10px;
 	background: #456;
+	margin-top: 20px;
+
+}
+
+.services li{
+	border-bottom: 2px #666 dashed;
+	padding-bottom:20px;
+
+
+
+
+}
+.services a{
+
+	background: #456;
+	padding: 10px;
+
+}
+
+input, textarea{
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 20px;
+	
 }
