@@ -4,14 +4,103 @@
 <head>
 
 	<title> Canvas - 你画我猜</title>
-	<h2> 多人在线绘图猜词游戏</h2>
-	
+	<h2> Check my drawing of the canvas below:</h2>
+	<style>
+		#myC{
+			border: 1px #000 solid;
+			background: #f4f4f4;
 
+
+		}
+	</style>
 
 
 </head>
 
 
+<body>
+	<canvas id="myC" width="300" height="300">
+
+	</canvas>
+
+	<script>
+		var c = document.getElementById("myC");
+		  						
+		var context = c.getContext("2d");
+		/*
+
+		// rect
+		
+
+
+		context.fillStyle ="red";
+					//left,top-down,width,height
+		context.fillRect(75,50,150,150);
+		*/
+
+
+		/*
+		//line
+					//left-top corner
+		context.moveTo(0,0);
+					// endpoint x   y
+		context.lineTo(200,100);
+		context.stroke();
+		*/
+
+		/*
+		// circle
+		context.beginPath();
+		context.arc(150,150,60,0,2*Math.PI);
+		context.fillStyle = "green";
+		context.fill();
+		// add a border 
+		context.lineWidth =4;
+		context.strokeStyle = "red";
+		context.stroke();
+
+		*/
+
+		/*
+		// text'
+		context.font = "12px Arial";
+		context.strokeStyle = "red";
+					//left margin, top margin
+		context.strokeText("hello",200,10);
+		*/
+
+		//gradient
+
+		var grd = context.createLinearGradient(0,0,100,0); // 100 is the amout of blue gradient 
+		grd.addColorStop(0,"blue");
+		grd.addColorStop(1,"white");
+		context.fillStyle = grd;
+
+		context.fillRect(10,10,150,150);
+
+
+
+
+	</script>
+
+
+	<div id="container" >
+		<div id="header">
+			<h1> What's more we can draw</h1>
+
+		</div>
+
+		<div id="nav">
+			<ul>
+			<li><a class="active" href="svg.html">SVG</a></li>
+
+			</ul>
+		</div>
+	</div>
+
+
+
+</body>
 
 
 
