@@ -11,7 +11,7 @@ body{
 
 
 a{ /* Navigation 里面所有的a tags:  Home, about,...;*/
-	color: #fff;
+	color: rgba(242, 226, 54, 0.955);
 	text-decoration: none; /* remove underline */
 }
 
@@ -30,7 +30,7 @@ ul{
 
 #container{
 	background: #333;
-	wiidth: 960px;
+	width: 960px;
 	margin: 30px auto;
 	overflow: hidden;
 	padding: 10px;
