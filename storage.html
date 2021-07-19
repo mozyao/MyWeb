@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Web Storage </title>
+
+</head>
+<body>
+
+    <div id="myname"></div>
+
+    <script>
+    if(typeof(Storage)!=="undefined"){
+        //store 
+        localStorage.setItem('name','Wei');
+
+
+        // get 
+        console.log(localStorage.getItem('name'));
+        //or 
+        //console.log(localStorage.name);
+
+        //remove 
+       // localStorage.removeItem('name');
+        if(localStorage.name){
+        document.getElementById('myname').innerHTML = localStorage.getItem('name');
+
+        }else{
+            document.getElementById('myname').innerHTML ="No name Found";
+        }
+
+    }else{
+        console.log('LocalStorage Not Available')
+    }
+
+
+    </script>
+</body
+
+
+
+</html>
